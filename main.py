@@ -1,5 +1,6 @@
 from loading import load_directory
 from kmers import stream_kmers, kmer2str
+from matplotlib import pyplot as plt
 import numpy as np
 
 
