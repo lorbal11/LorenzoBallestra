@@ -9,11 +9,11 @@ def jaccard(fileA, fileB, k):
     U = 0
     I = 0
     for w in range(0,len(fileA)):
-        for kmer in enum(fileA[w],k):
+        for kmer in stream_kmers(fileA[w],k):
             dic[kmer] = 1 if kmer not in dic else dic[kmer]+1
             U +=1
     for w in range(0,len(fileB)):
-        for kmer in enum(fileB[w],k):
+        for kmer in stream_kmers(fileB[w],k):
             if kmer in dic:
                 I +=1
                 dic[kmer]= dic[kmer]-1
