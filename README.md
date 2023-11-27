@@ -8,6 +8,7 @@ Concernant l'optimisation du code présent dans les fichiers annexes, son exécu
 ![image](https://github.com/lorbal11/LorenzoBallestra/assets/150147653/d4702199-4f36-4c4e-ac52-6c00902e36f9)
 
 Concernant les résultats, on obtient les disctances suivante entre les 5 génomes :
+
 GCF_000006945.2_ASM694v2_genomic.fna GCF_008244785.1_ASM824478v1_genomic.fna 0.9377564127983907
 GCF_000006945.2_ASM694v2_genomic.fna GCF_014892695.1_ASM1489269v1_genomic.fna 0.0017591971757668513
 GCF_000006945.2_ASM694v2_genomic.fna GCF_020526745.1_ASM2052674v1_genomic.fna 0.019091889920944443
