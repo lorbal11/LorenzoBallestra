@@ -26,14 +26,24 @@ def jaccard(fileA, fileB, k):
 
 if __name__ == "__main__":
     # Load all the files in a dictionary
-    files = load_directory("data")
+    files = load_directory("C:/Users/dcnad/Downloads/data")
     k = 21
-    
     filenames = list(files.keys())
+    mat = np.zeros((len(files),len(files)))
     for i in range(len(files)):
+        mat[i,i] = 1
         for j in range(i+1, len(files)):
-            
-            # --- Complete here ---
+            J = jaccard(files[filenames[i]], files[filenames[j]], k)
+            mat[i,j] = J
+            mat[j,i]= J
+            print(filenames[i], filenames[j], J)
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    cax = ax.matshow(mat)
+    fig.colorbar(cax)
+    ax.set_xticks(range(len(files)))
+    ax.set_yticks(range(len(files)))
+    ax.set_xticklabels(filenames, rotation=-70)
+    ax.set_yticklabels(filenames)
+    plt.show()
 
-            j = jaccard(files[filenames[i]], files[filenames[j]], k)
-            print(filenames[i], filenames[j], j)
