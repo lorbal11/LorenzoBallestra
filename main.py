@@ -4,9 +4,23 @@ from kmers import stream_kmers, kmer2str
 
 
 def jaccard(fileA, fileB, k):
-    j = 0
-    # --- To complete ---
-    return j
+    dic = {}
+    U = 0
+    I = 0
+    for w in range(0,len(fileA)):
+        for kmer in enum(fileA[w],k):
+            dic[kmer] = 1 if kmer not in dic else dic[kmer]+1
+            U +=1
+    for w in range(0,len(fileB)):
+        for kmer in enum(fileB[w],k):
+            if kmer in dic:
+                I +=1
+                dic[kmer]= dic[kmer]-1
+                if dic[kmer]==0:
+                    del dic[kmer]
+            else:
+                U += 1
+    return I/U
 
 
 
