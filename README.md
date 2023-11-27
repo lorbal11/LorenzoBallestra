@@ -16,4 +16,5 @@ Vous devez également y indiquer le temps d'exécution qu'il a fallu pour calcul
 En observant les distances obtenues, que pouvez-vous dire des espèces présentes dans cet échantillon ?
 
 
-![Uploading image.png…]()
+![image](https://github.com/lorbal11/LorenzoBallestra/assets/150147653/d4702199-4f36-4c4e-ac52-6c00902e36f9)
+
