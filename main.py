@@ -47,5 +47,6 @@ if __name__ == "__main__":
     ax.set_yticks(range(len(files)))
     ax.set_xticklabels(filenames, rotation=-70)
     ax.set_yticklabels(filenames)
-    plt.show()
+    fig.savefig('C:/Users/dcnad/Downloads/matrixbact.png') 
+    plt.close(fig)
 
