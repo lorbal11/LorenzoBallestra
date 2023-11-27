@@ -23,6 +23,7 @@ GCF_020526745.1_ASM2052674v1_genomic.fna GCF_020535205.1_ASM2053520v1_genomic.fn
 qu'on résume dans la matrice de distaces suivante :
  ![image](https://github.com/lorbal11/LorenzoBallestra/assets/150147653/4173e5ea-0604-4acd-90f7-e9aac2525f98)
 
-En observant les distances obtenues, on peut dire que
+En observant les distances obtenues, on peut dire que les génomes des bactéries GCF_008244785.1_ASM824478v1 et GCF_000006945.2_ASM694v2 sont très proches, ces 2 bactéries ont probablement un ancêtre commun proche. D'autre par les bactéries GCF_020526745.1_ASM2052674v1 et GCF_020535205.1_ASM2053520v1 sont aussi relativement proches et devrait avoir un ancêtre commun plus récent qu'avec les 3 autres bactéries. Enfin la bactérie GCF_014892695.1_ASM1489269v1 semble être très distante des 4 autres bactéries.
+
 
 
