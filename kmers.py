@@ -15,6 +15,21 @@ def kmer2str(val, k):
     return "".join(str_val)
 
 
-def stream_kmers(text, k):
-    # --- To complete ---
-    pass
+def stream_kmers(seq, k):
+    x = 0
+    y = 0
+    mask = (1<<(k*2))-1
+    for nuc in range(0,len(seq)):
+        if seq[nuc] not in ["A","C","T","G"]:
+            pass
+        else:
+            n = (ord(seq[nuc])>>1)%4
+            x <<=2
+            x += n
+            x&=mask
+            if nuc < k-1:
+                y += ((n-2)%4)<<((nuc+1)*2)
+            else:
+                y >>=2
+                y += ((n-2)%4)<<((k-1)*2)
+                yield min(x,y)
