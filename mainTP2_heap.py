@@ -70,5 +70,4 @@ if __name__ == "__main__":
     ax.set_yticks(range(len(files)))
     ax.set_xticklabels(filenames, rotation=-70)
     ax.set_yticklabels(filenames)
-    #fig.savefig('C:/Users/dcnad/Downloads/matrixbact_heap.png', bbox_inches = 'tight') 
-    plt.show()
+    fig.savefig('C:/Users/dcnad/Downloads/matrixbact_heap.png', bbox_inches = 'tight') 
