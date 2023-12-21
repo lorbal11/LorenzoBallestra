@@ -14,8 +14,9 @@ def ech_hash(fileA,k,s):
     sketch = [-math.inf]*s
     for j in range(len(fileA)):
         for kmer in stream_kmers(fileA[j],k):
-            i = kmer%s
-            sketch[i] = max(sketch[i], xorshift(kmer))
+            new_kmer = xorshift(kmer)
+            i = new_kmer%s
+            sketch[i] = max(sketch[i], new_kmer)
     return sketch
 
 
