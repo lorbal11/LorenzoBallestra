@@ -41,7 +41,7 @@ if __name__ == "__main__":
     # Load all the files in a dictionary
     files = load_directory("C:/Users/dcnad/Downloads/data")
     k = 31
-    s = 1000
+    s = 5000
     filenames = list(files.keys())
     mat = np.zeros((5,5))
     heap_lists = []
