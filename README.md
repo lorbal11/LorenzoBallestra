@@ -1,9 +1,9 @@
 Ballestra Lorenzo
 Delattre Mathys
 
-# Alignment free - TP 1
+# Alignment free - TP 2
 
-On utilise une approche kmers pour comparer 5 génomes bactériens de manière rapide.
+On utilise une approche kmers pour comparer 5 génomes bactériens de manière rapide en échantillonnant 5000 kmers par génomes pour les comparaisons.
 Concernant l'optimisation du code présent dans les fichiers annexes, son exécution prends 93s et un espace mémoire maximal de 482280 kilobytes.
 ![image](https://github.com/lorbal11/LorenzoBallestra/assets/150147653/d4702199-4f36-4c4e-ac52-6c00902e36f9)
 
