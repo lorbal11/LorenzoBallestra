@@ -2,6 +2,13 @@ from loading import load_directory
 from kmers import stream_kmers, kmer2str
 import numpy as np
 from matplotlib import pyplot as plt
+import math
+
+def xorshift(x):
+    x ^= (x << 13) & 0xFFFFFFFFFFFFFFFF
+    x ^= (x >> 7) & 0xFFFFFFFFFFFFFFFF
+    x ^= (x << 17) & 0xFFFFFFFFFFFFFFFF
+    return x
 
 def ech_hash(fileA,k,s):
     sketch = [-math.inf]*s
